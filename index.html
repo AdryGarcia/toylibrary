@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Metadata -->
+    <meta charset="UTF-8" />
+    <meta name="author" content="Toy Library" />
+    <meta name="description" content="Toy Library" />
+    <meta name="keywords" content="HTML, CSS, JavaScript, React" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comox Valley | Toy Library</title>
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="images/logo.png" />
+    <!-- Link to compiled CSS from main.scss, which imports bootstrap.scss -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Parkinsans:wght@300..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Grandstander:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Parkinsans:wght@300..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Londrina+Sketch&family=Rammetto+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Delius&family=Londrina+Sketch&family=Rammetto+One&display=swap"
+      rel="stylesheet"
+    />
+    
+  </head>
+
+  <body> 
+    <!--Nav bar-->
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-toggler"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-toggler">
+          <a class="navbar-brand" href="#">
+            <img
+              src="images/logo.jpg"
+              width="80"
+              alt="logo"
+              class="d-none d-md-block logo"
+            />
+            <!-- se añade clase logo para crear animacion-->
+            <!--dimensiones logotipo-->
+          </a>
+          <ul
+            class="navbar-nav d-flex justify-content-center align-items-center"
+          >
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#about"
+                >About</a
+              >
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#projects"></a>
+
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#testimonials">Testimonials</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div> 
+    </nav>
+
+    <style>
+  /* Aplica a todos los links del navbar */
+  .nav-link {
+    color: black;
+    padding: 5px 10px;
+    transition: 0.3s;
+  }
+
+  /* Efecto hover: fondo negro y texto blanco */
+  .nav-link:hover {
+    background-color: black;
+    color: white;
+    border-radius: 5px; /* opcional para esquinas redondeadas */
+  }
+
+  /* Hover cuando está active */
+.nav-link.active:hover {
+  background-color: black;
+  color: white !important; /* <- Para que no desaparezca */
+}
+</style>
+
+
+
+  </body>

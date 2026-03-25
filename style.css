@@ -1,0 +1,67 @@
+/* General Styles */
+
+body {
+  font-family: "Delius", sans-serif;
+}
+
+h1,
+h2 {
+  font-family: "Rammetto One", cursive;
+}
+
+h3,
+h4 {
+  font-family: "Grandstander", cursive;
+}
+
+p {
+  font-family: "Parkinsans", sans-serif;
+  /*font-family: 'Londrina Sketch', cursive;*/
+  /* font-family: 'Rammetto One', cursive; */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Nav bar */
+.navbar {
+  padding: 2rem;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between;
+}
+a.nav-link {
+  /*color: rgb(255, 255, 255);*/
+  margin: 20px;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+
+  /* logo animation */
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.logo {
+  transition: transform 0.3s ease-in-out;
+}
+.logo:hover {
+  animation: bounce 0.7s ease-in-out; /* Duración de la animación */
+}
