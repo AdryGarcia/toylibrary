@@ -24,6 +24,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.navbar {
+  background-color: #28a745; /* verde */
+}
+
 /* Nav bar */
 .navbar {
   padding: 2rem;
