@@ -69,3 +69,13 @@ a.nav-link {
 .logo:hover {
   animation: bounce 0.7s ease-in-out; /* Duración de la animación */
 }
+
+.logo {
+  width: 120px;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 90px;
+  }
+}
