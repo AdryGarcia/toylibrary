@@ -166,14 +166,25 @@ a.nav-link {
 }
 
 .steps-section h5 {
+  font-size: 27px;
   font-weight: bold;
 }
 
 /* Imágenes */
 .step-img {
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 70px;
   object-fit: contain;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* animación suave */
+  
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* sombra inicial */
+  border-radius: 90px; /* opcional: se ve más bonito */
+}
+
+.step-img:hover {
+  transform: scale(1.1) translateY(-5px); /* 👈 se agranda */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* 👈 sombra más fuerte */
 }
 
 /* Ajuste en mobile */
@@ -181,4 +192,122 @@ a.nav-link {
   .step-img {
     max-width: 90px;
   }
+}
+
+/********** PINK CARD *************/
+
+/* Sección */
+.membership-section {
+  text-align: center;
+  margin-top: 80px;
+}
+
+/* Caja rosa */
+.membership-card {
+  background-color: #ffdee6; /* rosa */
+  color: #ff00d0;
+  padding: 60px 20px 30px;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.40); /* 👈 sombra */
+}
+
+/* Logo arriba centrado */
+.logo-container {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10; 
+}
+
+.logo-top {
+  width: 80px;
+  background: white;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+/* Botón */
+.membership-btn {
+  background-color: rgb(255, 255, 255);
+  color: #ff00b3;
+  border: none;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.membership-btn:hover {
+  background-color: #ff859f; /* rosa más claro al hover */
+  transform: scale(1.05); /* efecto hover */
+  }
+
+/* Imágenes laterales */
+.side-img {
+  max-height: 300px;
+}
+
+/******** SOCIAL MEDIA CARDS *********/
+
+/* Tarjetas */
+.social-card {
+  background-color: #ffffff;
+  padding: 0px;
+  border-radius: 15px;
+
+  text-align: center;
+  height: 110%;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover */
+.social-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Imagen */
+.social-card img {
+  width: 100%;       /* ocupa todo el ancho */
+  height: 150px;     /* altura controlada */
+  object-fit: cover; /* recorta sin deformar */
+  border-radius: 15px;
+}
+
+/* Título */
+.social-card h5 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Texto */
+.social-card p {
+  font-size: 14px;
+  margin-bottom: 15px;
+  margin-top: 25px;
+}
+
+/* Botón */
+.social-btn {
+  display: inline-block;
+  background-color: #ff6f91;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.social-btn:hover {
+  background-color: #e05578;
+}
+
+.social-section h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
 }
