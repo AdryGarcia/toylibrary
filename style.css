@@ -331,6 +331,17 @@ a.nav-link {
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
+.footer {
+  width: 100%;
+  margin-top: 50px; /* espacio arriba */
+}
+
+.footer-img {
+  width: 100%;        /* 👈 ocupa todo el ancho */
+  height: auto;       /* 👈 mantiene proporción */
+  display: block;     /* 👈 elimina espacio raro abajo */
+}
+
 @media (max-width: 768px) {
   .calendar-wrapper {
     max-width: 65%; /* ocupa casi todo pero con margen */
