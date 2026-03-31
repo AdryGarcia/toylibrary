@@ -54,7 +54,8 @@
       rel="stylesheet"
     />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  </head>
+
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css" rel="stylesheet">
   <body>
 
     <!--Nav bar-->
@@ -305,47 +306,66 @@
     <div class="row">
 
       <!-- Card 1 -->
-      <div class="col-md-3 mb-4">
+      <div class="col-md-3 mb-5">
         <div class="social-card">
           <img src="images/card1.png" alt="facebook">
 
-          <p>Follow us for updates and community events.</p>
-          <a href="#" class="social-btn">Go</a>
+          <p>Follow us for updates and events.</p>
+          <a href="#" class="social-btn">Follow</a>
         </div>
       </div>
 
       <!-- Card 2 -->
-      <div class="col-md-3 mb-4">
+      <div class="col-md-3 mb-5">
         <div class="social-card">
           <img src="images/card2.png" alt="instagram">
 
-          <p>See photos and stories from our toy library.</p>
-          <a href="#" class="social-btn">Go</a>
+          <p>See photos and stories from our library.</p>
+          <a href="#" class="social-btn">Follow us</a>
         </div>
       </div>
 
       <!-- Card 3 -->
-      <div class="col-md-3 mb-4">
+      <div class="col-md-3 mb-5">
         <div class="social-card">
           <img src="images/card3.png" alt="twitter">
 
           <p>Stay informed with our latest news.</p>
-          <a href="#" class="social-btn">Go</a>
+          <a href="#" class="social-btn">Follow</a>
         </div>
       </div>
 
       <!-- Card 4 -->
-      <div class="col-md-3 mb-4">
+      <div class="col-md-3 mb-5">
         <div class="social-card">
           <img src="images/card4.png" alt="youtube">
 
           <p>Watch videos and learn more about us.</p>
-          <a href="#" class="social-btn">Go</a>
+          <a href="#" class="social-btn">Follow us</a>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<!-- CALENDARIO -->
+
+<link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+
+
+<section class="calendar-section py-5">
+  <div class="container text-center">
+
+    <h2 class="mb-4">Our Schedule</h2>
+
+    <div class="calendar-wrapper">
+      <div id="calendar"></div> 
+    </div>
+
+  </div>
+</section>
+
 
 
 <!--JAVASCRIPT-->
@@ -354,5 +374,56 @@
 
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
+<!-- CALENDARIO -->
+
+ <script>
+document.addEventListener('DOMContentLoaded', function () {
+  var calendarEl = document.getElementById('calendar');
+
+  if (calendarEl) {
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+      initialView: 'dayGridMonth',
+
+      events: function(fetchInfo, successCallback) {
+        let events = [];
+        let start = new Date(fetchInfo.start);
+        let end = new Date(fetchInfo.end);
+
+        for (let d = new Date(start); d <= end; d.setDate(d.getDate() + 1)) {
+          let day = d.getDay();
+          let dayOfMonth = d.getDate();
+
+          // 🟨 SÁBADOS (1er y 3er)
+          if (day === 6) {
+            if (dayOfMonth <= 7 || (dayOfMonth >= 15 && dayOfMonth <= 21)) {
+              events.push({
+                start: d.toISOString().split('T')[0],
+                display: 'background',
+                backgroundColor: '#ffe066'
+              });
+            }
+          }
+
+          // 🟩 MIÉRCOLES (2do)
+          if (day === 3 && dayOfMonth >= 8 && dayOfMonth <= 14) {
+            events.push({
+              start: d.toISOString().split('T')[0],
+              display: 'background',
+              backgroundColor: '#a0e7a0'
+            });
+          }
+        }
+
+        successCallback(events);
+      }
+
+    });
+
+    calendar.render();
+  }
+});
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
 
   </body>

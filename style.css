@@ -311,3 +311,32 @@ a.nav-link {
   font-weight: bold;
   color: #333;
 }
+
+@media (max-width: 768px) {
+  .social-card {
+    max-width: 300px;
+    margin: 0 auto; /* centrar */
+  }
+}
+
+/*********** CALENDARIO ************/
+
+.calendar-wrapper {
+  max-width: 500px;   /* 👈 controla el tamaño */
+  margin: 0 auto;     /* 👈 centra */
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+  .calendar-wrapper {
+    max-width: 65%; /* ocupa casi todo pero con margen */
+    padding: 10px;
+  }
+}
+
+
+
