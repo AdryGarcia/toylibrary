@@ -341,7 +341,7 @@ a.nav-link {
 
 /* Capa encima (para el texto) */
 .footer-overlay {
-  background-color: #28a745; /* 👈 oscurece la imagen */
+  background-color: #1aa5bd; /* 👈 oscurece la imagen */
   padding: 50px 20px;
 }
 
