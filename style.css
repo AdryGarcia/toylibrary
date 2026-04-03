@@ -206,7 +206,7 @@ a.nav-link {
 .membership-card {
   background-color: #ffdee6; /* rosa */
   color: #ff00d0;
-  padding: 60px 20px 30px;
+  padding: 60px 40px 30px;
   border-radius: 20px;
   position: relative;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.40); /* 👈 sombra */
@@ -230,18 +230,20 @@ a.nav-link {
 
 /* Botón */
 .membership-btn {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(229, 232, 49);
   color: #ff00b3;
   border: none;
   margin-top: 20px;
-  padding: 10px 20px;
+  padding: 10px 40px;
   border-radius: 10px;
   font-weight: bold;
   transition: transform 0.3s, background-color 0.3s;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .membership-btn:hover {
-  background-color: #ff859f; /* rosa más claro al hover */
+  background-color: #41ff28; /* rosa más claro al hover */
   transform: scale(1.05); /* efecto hover */
   }
 
@@ -420,7 +422,7 @@ a.nav-link {
   background-color: #1aa5bd !important;
   color: #ffffff !important;
   font-weight: bold;
-  padding: 12px 30px !important;
+  padding: 15px 40px !important;
   border-radius: 20px !important;
   text-decoration: none !important;
   display: inline-block; /* asegúrate de que se vea como botón */
