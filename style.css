@@ -25,7 +25,7 @@ html {
 }
 
 .navbar {
-  background-color: #28a745; /* verde */
+  background-color: #28a7a1; /* verde */
 }
 
 /* NAV BAR */
@@ -99,7 +99,7 @@ a.nav-link {
 /* Imagen */
 .hero-img {
   width: 100%;
-  height: 600px;
+  height: 60vh;
   object-fit: cover;
 }
 
@@ -352,5 +352,62 @@ a.nav-link {
   }
 }
 
+/************** MEMBERSHIP SECTION ********************/
 
+/* Caja rosa */
+.feature-box {
+  background-color: #ffe4ec;
+  padding: 40px 20px;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Tarjetas */
+.feature-card {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+
+  box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+/* Hover bonito */
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Imagen dentro de card */
+.feature-card img {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.feature-text {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #333;
+}
+
+/* Imágenes laterales decorativas */
+.side-decor {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 220px;
+  opacity: 0.8;
+ /* display: none; */
+}
+
+/* Izquierda */
+.left-img {
+  left: -60px;
+}
+
+/* Derecha */
+.right-img {
+  right: -60px;
+}
 

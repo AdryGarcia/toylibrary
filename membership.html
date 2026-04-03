@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Metadata -->
+    <meta charset="UTF-8" />
+    <meta name="author" content="Rebeca Garcia" />
+    <meta name="description" content="toy_library" />
+    <meta name="keywords" content="HTML, CSS, JavaScript, React" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comox Valley | Toy library</title>
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="images/logo.jpg" />
+    <!-- Link to compiled CSS from main.scss, which imports bootstrap.scss -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Parkinsans:wght@300..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Grandstander:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Parkinsans:wght@300..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Londrina+Sketch&family=Rammetto+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Delius&family=Londrina+Sketch&family=Rammetto+One&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css" rel="stylesheet">
+  </head>
+    <body>
+
+    <!--Nav bar-->
+
+   <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #1aa5bd;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="images/logo.png" width="120" alt="logo" class="logo"/>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" 
+            aria-controls="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbar-toggler">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#Membership">Membership</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Volunteer">Volunteer</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#About">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Donate">Donate</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <style>
+      
+  /* Aplica a todos los links del navbar */
+  .nav-link {
+    color: rgb(255, 255, 255);
+    padding: 5px 10px;
+    transition: 0.3s;
+  }
+
+  /* Efecto hover: fondo negro y texto blanco */
+  .nav-link:hover {
+    background-color: black;
+    color: white;
+    border-radius: 5px; /* opcional para esquinas redondeadas */
+  }
+
+  /* Hover cuando está active */
+.nav-link.active:hover {
+  background-color: black;
+  color: white !important; /* <- Para que no desaparezca */
+}
+</style>  
+
+  <!-- CONTENIDO MEMBERSHIP -->
+
+<!-- HERO SECTION -->
+
+<div class="hero">
+  <img src="images/2326.jpg" alt="hero" class="hero-img">
+
+  <div class="hero-content">
+    <h1>Membership</h1>
+    <p>Become a member!</p>
+  <!--  <a href="#Learn more" class="btn btn-info">Learn more</a>-->
+  </div> 
+</div>
+
+<!-- FEATURE SECTION -->
+
+<section class="feature-section py-5">
+
+  <div class="container text-center">
+
+    <!-- HEADER -->
+    <h2 class="mb-3">¿What is a Toy Library Membership?</h2>
+    <p class="mb-5">
+      A CVTLS membership is $20 a year, giving your family the ability to 
+      take out any 5 toys at a time to keep for a whole month. The Toy
+      Library offers three openings a month, providing endless opportunities
+      for play!
+    </p>
+</div>
+
+    <!-- CAJA ROSA -->
+    <div class="feature-box position-relative">
+
+  <!-- IMÁGENES DE FONDO -->
+
+  <img src="images/4.png" class="side-decor left-img" alt="left">
+  <img src="images/2.png" class="side-decor right-img" alt="right">
+
+  <!-- CUADRO ROSA -->
+  <div class="pink-card position-relative">
+    <div class="feature-text text-center">
+      <h3>Why should I join?</h3>
+    </div>
+
+      <!-- GRID DE TARJETAS -->
+      <div class="row g-4">
+
+        <!-- CARD 1 -->
+        <div class="col-md-4">
+          <div class="feature-card">
+            <img src="images/icon1.png" alt="">
+            <p>Affordable Membership</p>
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="col-md-4">
+          <div class="feature-card">
+            <img src="images/icon2.png" alt="">
+            <p>Community Focused</p>
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="col-md-4">
+          <div class="feature-card">
+            <img src="images/icon3.png" alt="">
+            <p>Eco Friendly</p>
+          </div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="col-md-4">
+          <div class="feature-card">
+            <img src="images/icon4.png" alt="">
+            <p>Wide Selection</p>
+          </div>
+        </div>
+
+        <!-- CARD 5 -->
+        <div class="col-md-4">
+          <div class="feature-card">
+            <img src="images/icon5.png" alt="">
+            <p>Family Friendly</p>
+          </div>
+        </div>
+
+        <!-- CARD 6 -->
+        <div class="col-md-4">
+          <div class="feature-card">
+            <img src="images/icon6.png" alt="">
+            <p>Safe & Clean</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+
+
+  <!-- FOOTER -->
+
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
