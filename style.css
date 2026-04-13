@@ -494,6 +494,31 @@ a.nav-link {
   z-index: 2;
 }
 
+/* yellow form */
+
+/* Imagen específica */
+.img-volunteer {
+  width: 110%;   /* 👈 hace la imagen más grande */
+  max-width: none;
+}
+
+/* Ajuste para desktop */
+.img-box-volunteer {
+  position: relative;
+}
+
+/* Texto específico */
+.img-text-volunteer {
+  bottom: 20%;
+  left: 8%;   /* 👈 mueve el texto a la izquierda */
+  right: auto;
+  max-width: 320px;
+  text-align: left; /* 👈 alinea texto a la izquierda */
+ /* bottom: 20%;
+  left: 28%;
+  max-width: 350px; */
+}
+
 /* Opcional: sombra para que el texto se lea mejor 
 .img-text h3,
 .img-text h5,
@@ -516,4 +541,85 @@ a.nav-link {
   .img-text p {
     font-size: 0.9rem;
   }
+
+  /* imagen amarilla */
+
+  .img-volunteer {
+    width: 100%; /* vuelve al tamaño normal */
+  }
+
+  .img-text-volunteer {
+    bottom: 25%;
+    left: 10%;
+    right: 10%;
+    max-width: 100%;
+    font-size: 14px;
+  }
+
+}
+
+/******** VOLUNTEER FORM ********/
+
+/* Imagen izquierda */
+
+.form-image {
+ /* width: 100%; 
+  height: 80%; */
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.volunteer-form-section .row {
+  align-items: stretch; /* 👈 iguala alturas */
+}
+
+.image-wrapper {
+  height: 100%;
+}
+
+/* Imagen */
+
+.form-image {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover; /* MUY IMPORTANTE */
+
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Caja del formulario */
+
+.form-box {
+  background-color: #fff4cc; /* amarillo suave */
+  padding: 30px;
+  border-radius: 20px;
+  height: 100%;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Campos */
+
+.form-control {
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* Botón */
+
+.volunteer-btn {
+  background-color: #00f2ff !important;
+  color: rgb(255, 255, 255) !important;
+  border: none;
+  padding: 12px;
+  border-radius: 12px;
+  font-weight: bold;
+
+  transition: 0.3s;
+}
+
+.volunteer-btn:hover {
+  background-color: #00cad4 !important;
+  transform: scale(1.03);
 }
