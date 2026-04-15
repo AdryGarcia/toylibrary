@@ -624,3 +624,150 @@ a.nav-link {
   background-color: #00cad4 !important;
   transform: scale(1.03);
 }
+
+/**************** ABOUT US ***************/
+
+.about-hero {
+  position: relative;
+  width: 100%;
+  height: 85vh;
+  overflow: hidden;
+}
+
+/* TEXTO CENTRADO */
+
+.about-hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: rgb(0, 0, 0);
+  z-index: 2;
+}
+
+.about-hero-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.about-hero-content p {
+  font-size: 1.2rem;
+}
+
+/* IMÁGENES LATERALES */
+
+.about-side-img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: 0;
+  width: 280px;
+  height: auto;
+  z-index: 2;
+}
+
+/* IZQUIERDA */
+
+.about-left {
+  left: 0;
+}
+
+/* DERECHA */
+
+.about-right {
+  right: 0;
+}
+
+/* SECTION BACKGROUND BOX */
+
+.pink-box {
+  background-color: #ffdee6;
+  padding: 50px 25px;
+  border-radius: 20px;
+}
+
+/* CARDS */
+
+.info-card {
+  width: 80%;
+  height: auto;
+  background: white;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+
+  margin: 0 auto;
+}
+
+.info-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+}
+
+/* BOTÓN */
+
+.pink-btn {
+  background-color: #1aa5bd;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.pink-btn:hover {
+  background-color: #00cad4;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+
+  .about-hero {
+    height: 60vh;
+  }
+
+   .about-hero-content {
+    width: 90%;        /* ocupa casi toda la pantalla */
+    max-width: 100%;
+    padding: 0 15px;   /* aire a los lados */
+  }
+
+  .about-side-img {
+    display: none;
+    width: 90px;
+  }
+
+  .about-hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .about-hero-content p {
+    font-size: 1rem;
+  }
+
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+
+  .about-side-img {
+    width: 180px;  /* más pequeñas que desktop */
+  }
+
+  .about-left {
+    left: 20px;
+  }
+
+  .about-right {
+    right: 20px;
+  }
+
+}
